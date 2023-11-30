@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
 public class EmployeeAllreadyAddedException extends RuntimeException {
-    public EmployeeAllreadyAddedException(){
+    public EmployeeAllreadyAddedException() {
         super("Такой сотрудник уже существует");
     }
 }

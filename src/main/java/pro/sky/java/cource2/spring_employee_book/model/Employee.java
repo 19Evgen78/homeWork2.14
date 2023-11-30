@@ -5,7 +5,7 @@ import java.util.Random;
 
 import static org.apache.tomcat.util.IntrospectionUtils.capitalize;
 
-public class Employee{
+public class Employee {
     private String firstName;
     private String lastName;
     private int salary;
@@ -17,8 +17,8 @@ public class Employee{
 
         this.firstName = capitalize(firstName.toLowerCase());
         this.lastName = capitalize(lastName.toLowerCase());
-        this.salary = random.nextInt(10000)+1000;
-        this.departmentId = random.nextInt(5)+1;
+        this.salary = random.nextInt(10000) + 1000;
+        this.departmentId = random.nextInt(5) + 1;
     }
 
     public Employee(String firstName, String lastName, int salary, int departmentId) {
@@ -44,7 +44,7 @@ public class Employee{
         this.lastName = lastName;
     }
 
-    public  String getFullName(){
+    public String getFullName() {
         return firstName + " " + lastName;
     }
 
